@@ -1,0 +1,14 @@
+link_id,media,failed_tests,detail
+L1,radio,snr;rate,"snr 25.9 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 861.3 or Nyquist 200.0 Mbps"
+L2,radio,snr;rate,"snr 18.9 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 628.8 or Nyquist 200.0 Mbps"
+L3,cat6,distance;power;rate,distance 250 m > max 100 m; margin/distance failed (margin=nan); rate target 1000 Mbps x safety exceeds Shannon 3059.3 or Nyquist 1857.5 Mbps
+L3,radio,snr;rate,"snr 10.0 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 345.9 or Nyquist 200.0 Mbps"
+L4,cat6,distance;power;snr;rate,"distance 600 m > max 100 m; margin/distance failed (margin=nan); snr -88.0 dB, emi_heavy=true; rate target 1000 Mbps x safety exceeds Shannon 0.0 or Nyquist 1857.5 Mbps"
+L4,om3,distance;power,distance 600 m > max 550 m; margin/distance failed (margin=12.5)
+L4,radio,power;snr;rate,"margin/distance failed (margin=-1.6072498419049737); snr -31.6 dB, emi_heavy=true; rate target 1000 Mbps x safety exceeds Shannon 0.1 or Nyquist 200.0 Mbps"
+L5,cat6,distance;power;snr;rate,"distance 1200 m > max 100 m; margin/distance failed (margin=nan); snr -186.0 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 0.0 or Nyquist 1857.5 Mbps"
+L5,om3,distance;power,distance 1200 m > max 550 m; margin/distance failed (margin=11.0)
+L5,radio,distance;power;snr;rate,"distance 1200 m > max 1000 m; margin/distance failed (margin=-7.627849755184613); snr -3.6 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 52.0 or Nyquist 200.0 Mbps"
+L6,cat6,distance;power;snr;rate,"distance 1800 m > max 100 m; margin/distance failed (margin=nan); snr -318.0 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 0.0 or Nyquist 1857.5 Mbps"
+L6,om3,distance;power,distance 1800 m > max 550 m; margin/distance failed (margin=9.5)
+L6,radio,distance;power;snr;rate,"distance 1800 m > max 1000 m; margin/distance failed (margin=-11.149674936298226); snr -7.1 dB, emi_heavy=false; rate target 1000 Mbps x safety exceeds Shannon 25.4 or Nyquist 200.0 Mbps"

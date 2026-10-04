@@ -1,0 +1,7 @@
+link_id,bldg_a,bldg_b,length_m,target_mbps,avail_target,emi_heavy,has_conduit
+L1,Bldg-A,Bldg-B,40,1000,0.999,false,true
+L2,Bldg-B,Bldg-C,90,1000,0.999,false,true
+L3,Bldg-C,Bldg-D,250,1000,0.9995,false,false
+L4,Bldg-D,Bldg-E,600,1000,0.9995,true,true
+L5,Bldg-E,Bldg-F,1200,1000,0.9999,false,true
+L6,Bldg-A,Bldg-F,1800,1000,0.9999,false,true

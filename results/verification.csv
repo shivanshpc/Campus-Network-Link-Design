@@ -1,0 +1,44 @@
+check_id,description,expected,actual,status
+P1_COLUMNS,media_plan columns,"['link_id', 'bldg_a', 'bldg_b', 'media', 'rate_mbps', 'duplex', 'line_code', 'spare', 'cost']","['link_id', 'bldg_a', 'bldg_b', 'media', 'rate_mbps', 'duplex', 'line_code', 'spare', 'cost']",PASS
+P1_ROWS,one plan row per link,6,6,PASS
+P1_DUPLICATES,plan has no duplicate links,0,0,PASS
+P1_DUPLEX,all duplex values are full,full,['full'],PASS
+P1_L1_MEDIA,L1 Cat6 unless options explain rejection,cat6 or explained failure,cat6,PASS
+P1_L2_MEDIA,L2 Cat6 unless options explain rejection,cat6 or explained failure,cat6,PASS
+P1_L3_ARMOUR,L3 includes no-conduit surcharge,1800.0,1800.0,PASS
+P1_L4_MEDIA,L4 is not copper,not cat6,smf,PASS
+P1_L5_SPARE,L5 uses a spare for 99.99% target,True,True,PASS
+P1_L6_SPARE,L6 uses a spare for 99.99% target,True,True,PASS
+P1_L6_SMF,L6 uses single-mode fibre,smf,smf,PASS
+P1_BUDGET,plan cost is within params budget,<= 97000.0,94060.0,PASS
+P2_L4_COPPER,L4 copper rejection is noise/SNR related,noise/SNR failure,distance;power;snr;rate,PASS
+P2_L6_OM3,L6 OM3 rejection names distance or power,power or distance,distance;power / distance 1800 m > max 550 m; margin/distance failed (margin=9.5),PASS
+P2_REJECTION_NAMES,every rejection names a failing test,True,True,PASS
+P3_COLUMNS,options has required test columns,[],[],PASS
+P3_ROWS,options has 24 Cartesian rows,24,24,PASS
+P3_NAN,only non-applicable fibre SNR/copper margin are blank,0,0,PASS
+P3_PLOT,spectrum exists and is non-empty,> 0 bytes,161265,PASS
+P4_ORDER,all-SMF cost > budget > cheapest feasible,100715.0 > 97000.0 > 94060.0,100715.0 > 97000.0 > 94060.0,PASS
+P4_PLAN_COST,suggested feasible cost matches plan output,94060.0,94060.0,PASS
+H1_CAT6_LOSS,Cat6 90 m attenuation,19.8,19.8,PASS
+H2_CAT6_DISTANCE,Cat6 150 m power/distance result,False,False,PASS
+H3_SMF_RX,L6 SMF received power,-10.63,-10.63,PASS
+H3_SMF_MARGIN,L6 SMF margin,9.37,9.37,PASS
+H4_OM3_DISTANCE,L6 OM3 distance test,False,False,PASS
+H5_SHANNON,100 MHz at 30 dB Shannon capacity,996.7226258835992,996.7226258835992,PASS
+H6_NOISE_SUM,two -90 dBm noise terms sum in power,-86.98970004336019,-86.98970004336019,PASS
+H7_EMI_SNR,L4 copper SNR is lower than L2 copper SNR,< 58.201504659417296,-88.00159073122641,PASS
+H8_AVAIL,series availability is transceiver*cable*transceiver,0.9999732004814327,0.9999732004814328,PASS
+H8_PARALLEL,two-link parallel availability,0.9999999992817858,0.9999999992817858,PASS
+H9_DOWNTIME_999,99.9 percent annual downtime,about 8.8 h,8.8 h,PASS
+H9_DOWNTIME_9999,99.99 percent annual downtime,about 52.6 min,52.6 min,PASS
+P5_COMBINATIONS,brute force enumerates 4^6 plans,4096,4096,PASS
+P5_CHEAPEST,brute-force cheapest valid plan equals selected plan,94060.0,94060.0,PASS
+P5_LOW_BUDGET,brute force at 85 percent budget,no valid plan within budget,no valid plan,PASS
+P5_LOW_ENUM,low-budget brute force also enumerates 4096 plans,4096,4096,PASS
+A7_SELECTION_NAME,selection.py exists and no select import,True,True,PASS
+A8_FIXED_SEED,random generation has a fixed seed,seed=2026,True,PASS
+A2_DB_SUM,noise conversion uses mW before summing,db_to_mw and mw_to_dbm,True,PASS
+A4_AVAIL_UNITS,availability targets remain fractions,0.999-style fractions,True,PASS
+A5_ARMOUR_RULE,armour surcharge applies only without conduit,has_conduit false,True,PASS
+A6_COPPER_DISTANCE,copper distance limit is enforced,distance_ok,True,PASS

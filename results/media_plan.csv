@@ -1,0 +1,7 @@
+link_id,bldg_a,bldg_b,media,rate_mbps,duplex,line_code,spare,cost
+L1,Bldg-A,Bldg-B,cat6,1000,full,64B/66B,False,180.0
+L2,Bldg-B,Bldg-C,cat6,1000,full,64B/66B,False,280.0
+L3,Bldg-C,Bldg-D,om3,1000,full,Manchester,False,1800.0
+L4,Bldg-D,Bldg-E,smf,1000,full,Manchester,False,9000.0
+L5,Bldg-E,Bldg-F,smf,1000,full,Manchester,True,33600.0
+L6,Bldg-A,Bldg-F,smf,1000,full,Manchester,True,49200.0

@@ -217,6 +217,10 @@ This reads `data/`, runs every calculation, and writes the tables and plots to `
 3. Swap each link's cable to match the plan (copper straight-through, or fibre with fibre modules at both ends).
 4. Set speed and duplex to **full** on each interface.
 
+### For the sensitivity teammate
+
+Use `select_plan_tiered(options_df, budget)` from `code/selection.py` for budget-cut analysis. It returns `(plan_df, budget_met)`. The plan includes `link_id`, `media`, `spare`, `cost`, `length_shortfall`, `rate_shortfall`, `avail_shortfall`, `power_shortfall`, `snr_shortfall`, `total_shortfall`, and `valid`. `budget_met` is `True` when the selected plan cost is within the supplied budget and `False` when the lowest-cost fallback still cannot fit.
+
 ---
 
 ## Methodology and Formulas

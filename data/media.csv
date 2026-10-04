@@ -1,0 +1,5 @@
+media,loss_db_per_km,loss_db_per_100m,bandwidth_mhz,bandwidth_mhz_km,carrier_mhz,signal_levels,pairs,max_distance_m,cost_per_m,install_per_m,fixed_cost,mtbf_h,mttr_h,cable_failure_rate_per_km,tx_power_dbm,rx_sensitivity_dbm,source
+cat6,0,22,100,0,0,5,4,100,0.80,1.20,100,1000000,8,0.00001,0,0,ASSUMPTION - TODO cite
+om3,2.5,0,0,2000,0,2,1,550,2.50,2.00,300,1000000,12,0.00001,-3,-18,ASSUMPTION - TODO cite
+smf,0.35,0,0,100000,0,2,1,10000,8.00,5.00,1200,1000000,12,0.00001,-9,-20,ASSUMPTION - TODO cite
+radio,0,0,100,0,2400,2,1,1000,4.00,3.00,500,500000,2,0.00001,20,-75,ASSUMPTION - TODO cite

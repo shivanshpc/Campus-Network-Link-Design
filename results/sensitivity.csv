@@ -1,0 +1,8 @@
+cut_pct,budget,total_cost,budget_met,nonzero_shortfall_links,first_failing_link,dominant_shortfall_type,hard_shortfall_total,soft_shortfall_total,L1_total_shortfall,L2_total_shortfall,L3_total_shortfall,L4_total_shortfall,L5_total_shortfall,L6_total_shortfall
+0,97000.0,94060.0,True,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5,92150.0,77260.0,True,L5,L5,avail,0.0,0.599767713469545,0.0,0.0,0.0,0.0,0.599767713469545,0.0
+10,87300.0,77260.0,True,L5,L5,avail,0.0,0.599767713469545,0.0,0.0,0.0,0.0,0.599767713469545,0.0
+15,82450.0,77260.0,True,L5,L5,avail,0.0,0.599767713469545,0.0,0.0,0.0,0.0,0.599767713469545,0.0
+20,77600.0,77260.0,True,L5,L5,avail,0.0,0.599767713469545,0.0,0.0,0.0,0.0,0.599767713469545,0.0
+25,72750.0,69460.0,True,L6,L5,avail,0.0,1.3194970686537864,0.0,0.0,0.0,0.0,0.0,1.3194970686537864
+30,67900.0,52660.0,True,L5;L6,L5,avail,0.0,1.9192647821233315,0.0,0.0,0.0,0.0,0.599767713469545,1.3194970686537864

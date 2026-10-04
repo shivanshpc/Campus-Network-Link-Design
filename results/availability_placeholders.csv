@@ -1,0 +1,15 @@
+name,current_value,unit,source
+cat6.mtbf_h,1000000.0,hours,TODO: replace with datasheet; typical Cat6 campus placeholder
+cat6.mttr_h,8.0,hours,TODO: replace with datasheet; typical Cat6 campus placeholder
+cat6.cable_failure_rate_per_km,1e-05,failures per km-hour,TODO: replace with datasheet; typical Cat6 campus placeholder
+om3.mtbf_h,1000000.0,hours,TODO: replace with datasheet; typical OM3 campus placeholder
+om3.mttr_h,12.0,hours,TODO: replace with datasheet; typical OM3 campus placeholder
+om3.cable_failure_rate_per_km,1e-05,failures per km-hour,TODO: replace with datasheet; typical OM3 campus placeholder
+smf.mtbf_h,1000000.0,hours,TODO: replace with datasheet; typical SMF campus placeholder
+smf.mttr_h,12.0,hours,TODO: replace with datasheet; typical SMF campus placeholder
+smf.cable_failure_rate_per_km,1e-05,failures per km-hour,TODO: replace with datasheet; typical SMF campus placeholder
+radio.mtbf_h,500000.0,hours,TODO: replace with datasheet; typical 2.4 GHz campus placeholder
+radio.mttr_h,2.0,hours,TODO: replace with datasheet; typical 2.4 GHz campus placeholder
+radio.cable_failure_rate_per_km,1e-05,failures per km-hour,TODO: replace with datasheet; typical 2.4 GHz campus placeholder
+transceiver_mtbf_h,500000.0,hours,TODO: replace with transceiver datasheet; MTBF/MTTR placeholder based on Telcordia SR-332 practice
+transceiver_mttr_h,4.0,hours,TODO: replace with transceiver datasheet; MTBF/MTTR placeholder based on Telcordia SR-332 practice
